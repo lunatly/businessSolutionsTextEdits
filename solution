@@ -1,6 +1,7 @@
 # import tkinter module
 from tkinter import * 
 # creating main tkinter window/toplevel
+listbox = Listbox(root, 'grey', 'black', 5, 50, 100, 'arial') 
 master = Tk()
 
 # this will create a label widget
@@ -19,6 +20,7 @@ e2 = Entry(master)
 # this will arrange entry widgets
 e1.grid(row = 0, column = 1, pady = 2)
 e2.grid(row = 5, column = 6, pady = 2)
+
 
 # infinite loop which can be terminated by keyboard
 # or mouse interrupt
