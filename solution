@@ -10,7 +10,7 @@ l2 = Label(master, text = 'date')
 # grid method to arrange labels in respective
 # rows and columns as specified
 l1.grid(row = 0, column = 0, sticky = W, pady = 2)
-l2.grid(row = 0, column = 0, sticky = W, pady = 2)
+l2.grid(row = 5, column = 6, sticky = W, pady = 2)
 
 # entry widgets, used to take entry from user
 e1 = Entry(master)
