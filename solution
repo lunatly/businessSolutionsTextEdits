@@ -5,8 +5,8 @@ top = Tk()
 Grid()
 # create listbox object
 
-listbox = Listbox(top, height = 100, 
-                  width = 150, 
+listbox = Listbox(top, height = 75, 
+                  width = 100, 
                   bg = "lightGrey",
                   activestyle = 'dotbox', 
                   font = "Helvetica",
