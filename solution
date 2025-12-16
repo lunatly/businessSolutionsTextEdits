@@ -4,8 +4,8 @@ from tkinter import *
 master = Tk()
 
 # this will create a label widget
-l1 = Label(master, text = &quot;First:&quot;)
-l2 = Label(master, text = &quot;Second:&quot;)
+l1 = Label(master, text = 'name')
+l2 = Label(master, text = 'date')
 
 # grid method to arrange labels in respective
 # rows and columns as specified
