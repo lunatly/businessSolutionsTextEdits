@@ -2,10 +2,11 @@ from tkinter import *
 
 # create a root window.
 top = Tk()
-
+Grid()
 # create listbox object
-listbox = Listbox(top, height = 10, 
-                  width = 15, 
+
+listbox = Listbox(top, height = 100, 
+                  width = 150, 
                   bg = "lightGrey",
                   activestyle = 'dotbox', 
                   font = "Helvetica",
