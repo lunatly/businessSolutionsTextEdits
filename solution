@@ -6,7 +6,7 @@ Grid()
 # create listbox object
 
 listbox = Listbox(top, height = 50, 
-                  width = 100, 
+                  width = 110, 
                   bg = "lightGrey",
                   activestyle = 'dotbox', 
                   font = "Helvetica",
