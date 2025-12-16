@@ -6,24 +6,24 @@ top = Tk()
 # create listbox object
 listbox = Listbox(top, height = 10, 
                   width = 15, 
-                  bg = "grey",
+                  bg = "lightGrey",
                   activestyle = 'dotbox', 
                   font = "Helvetica",
-                  fg = "yellow")
+                  fg = "black")
 
 # Define the size of the window.
 top.geometry("300x250")  
 
 # Define a label for the list.  
-label = Label(top, text = " FOOD ITEMS") 
+label = Label(top, text = " NOTES") 
 
 # insert elements by their
 # index and names.
-listbox.insert(1, "Nachos")
-listbox.insert(2, "Sandwich")
-listbox.insert(3, "Burger")
-listbox.insert(4, "Pizza")
-listbox.insert(5, "Burrito")
+listbox.insert(1, "NAME!")
+listbox.insert(2, "NAME2")
+listbox.insert(3, "NAME3")#change these to variables set to users later
+listbox.insert(4, "NAME4")
+listbox.insert(5, "NAME5")
 
 # pack the widgets
 label.pack()
