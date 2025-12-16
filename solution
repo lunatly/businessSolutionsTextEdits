@@ -2,7 +2,7 @@ from tkinter import *
 
 # create a root window.
 top = Tk()
-Grid()
+
 # create listbox object
 
 listbox = Listbox(top, height = 50, 
@@ -26,6 +26,7 @@ listbox.insert(3, "NAME3")#change these to variables set to users later
 listbox.insert(4, "NAME4")
 listbox.insert(5, "NAME5")
 
+listbox.grid(row=5)
 # pack the widgets
 label.pack()
 listbox.pack()
