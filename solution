@@ -1,27 +1,35 @@
-# import tkinter module
-from tkinter import * 
-# creating main tkinter window/toplevel
-listbox = Listbox(root, 'grey', 'black', 5, 50, 100, 'arial') 
-master = Tk()
+from tkinter import *
 
-# this will create a label widget
-l1 = Label(master, text = 'name')
-l2 = Label(master, text = 'date')
+# create a root window.
+top = Tk()
 
-# grid method to arrange labels in respective
-# rows and columns as specified
-l1.grid(row = 0, column = 0, sticky = W, pady = 2)
-l2.grid(row = 5, column = 5, sticky = W, pady = 2)
+# create listbox object
+listbox = Listbox(top, height = 10, 
+                  width = 15, 
+                  bg = "grey",
+                  activestyle = 'dotbox', 
+                  font = "Helvetica",
+                  fg = "yellow")
 
-# entry widgets, used to take entry from user
-e1 = Entry(master)
-e2 = Entry(master)
+# Define the size of the window.
+top.geometry("300x250")  
 
-# this will arrange entry widgets
-e1.grid(row = 0, column = 1, pady = 2)
-e2.grid(row = 5, column = 6, pady = 2)
+# Define a label for the list.  
+label = Label(top, text = " FOOD ITEMS") 
+
+# insert elements by their
+# index and names.
+listbox.insert(1, "Nachos")
+listbox.insert(2, "Sandwich")
+listbox.insert(3, "Burger")
+listbox.insert(4, "Pizza")
+listbox.insert(5, "Burrito")
+
+# pack the widgets
+label.pack()
+listbox.pack()
 
 
-# infinite loop which can be terminated by keyboard
-# or mouse interrupt
-mainloop()
+# Display until User 
+# exits themselves.
+top.mainloop()
