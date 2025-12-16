@@ -1,4 +1,17 @@
-# import tkinter module
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Visible Grid Hack")
+root.configure(background='gray') # Color of the grid lines
+
+# Create and place frames with internal padding
+for row in range(3):
+    for col in range(3):
+        frame = tk.Frame(root, width=50, height=50, background='white', relief='ridge', borderwidth=1) # The "cells"
+        # padx/pady create the space where the 'gray' root background shows through
+        frame.grid(row=row, column=col, padx=2, pady=2, sticky="nsew") 
+
+root.mainloop()
 from tkinter import * 
 # creating main tkinter window/toplevel
 master = Tk()
@@ -9,7 +22,7 @@ l2 = Label(master, text = 'date')
 
 # grid method to arrange labels in respective
 # rows and columns as specified
-l1.grid(row = 0, column = 0, sticky = W, pady = 9)
+l1.grid(row = 0, column = 0, sticky = W, pady = 2)
 l2.grid(row = 0, column = 0, sticky = W, pady = 2)
 
 # entry widgets, used to take entry from user
