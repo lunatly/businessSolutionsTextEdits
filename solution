@@ -1,17 +1,4 @@
-import tkinter as tk
-
-root = tk.Tk()
-root.title("Visible Grid Hack")
-root.configure(background='gray') # Color of the grid lines
-
-# Create and place frames with internal padding
-for row in range(3):
-    for col in range(3):
-        frame = tk.Frame(root, width=50, height=50, background='white', relief='ridge', borderwidth=1) # The "cells"
-        # padx/pady create the space where the 'gray' root background shows through
-        frame.grid(row=row, column=col, padx=2, pady=2, sticky="nsew") 
-
-root.mainloop()
+# import tkinter module
 from tkinter import * 
 # creating main tkinter window/toplevel
 master = Tk()
