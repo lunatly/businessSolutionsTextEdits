@@ -29,3 +29,5 @@ summary.insert("1.0", "SUMMARY")
 summary.pack(expand=True, fill="both", pady=(0, 20))
 
 root.mainloop()
+
+#AYYYYYY WERE DONEEE
