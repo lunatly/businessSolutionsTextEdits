@@ -29,7 +29,7 @@ listbox.insert(5, "NAME5")
 
 listbox.grid(row=5)
 # pack the widgets
-label.pack()
+
 listbox.pack()
 
 
