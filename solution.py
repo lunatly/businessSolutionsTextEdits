@@ -2,7 +2,7 @@
 
 import tkinter as tk
 root = tk.Tk()
-root.title("Lightweight Notes")
+root.title("Bacon, Egg and Cheese")
 root.geometry("800x500")
 root.configure(bg="#A9A9A9")
 
