@@ -17,7 +17,7 @@ listbox = Listbox(top, height = 50,
 top.geometry("300x250")  
 
 # Define a label for the list.  
-label = Label(top, text = " NOTES") 
+label = Label(top, " NOTES") 
 
 # insert elements by their
 # index and names.
